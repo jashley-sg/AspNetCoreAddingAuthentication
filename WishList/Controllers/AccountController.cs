@@ -40,7 +40,7 @@ namespace WishList.Controllers
         public IActionResult Register(RegisterViewModel registerViewModel) 
         {
             if (!ModelState.IsValid)
-                return View(model);
+                return View(registerViewModel);
             
             var newUser = new ApplicationUser()
             {
