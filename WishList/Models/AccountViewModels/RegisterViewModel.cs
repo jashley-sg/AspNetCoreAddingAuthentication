@@ -9,6 +9,7 @@ namespace WishList.Models.AccountViewModels
     public class RegisterViewModel
     {
         [EmailAddress]
+        [Required]
         public string Email { get; set; }
         [Required]
         [StringLength(100, MinimumLength = 8)]
